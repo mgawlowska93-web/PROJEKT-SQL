@@ -9,3 +9,21 @@ CREATE TABLE manufacturers
    mfr_address TEXT NOT NULL,
    mfr_tax_id INTEGER UNIQUE,
    contract_date DATE);
+
+
+CREATE TABLE products
+(prod_id INTEGER PRIMARY KEY, 
+   mfr_id TEXT NOT NULL,
+   prod_name TEXT NOT NULL,
+   prod_description VARCHAR(200), 
+   net_price_purch DECIMAL(5, 2),
+   gross_price_purch DECIMAL(5, 2),
+   net_price_sell DECIMAL(5, 2),
+   gross_price_sell DECIMAL(5, 2),
+   vat_percent INT DEFAULT 23);
+
+CREATE TABLE orders
+(order_id INTEGER PRIMARY KEY, 
+   customer_id INTEGER NOT NULL,
+   prod_id INTEGER NOT NULL,
+   order_date DATE DEFAULT (CURRENT_DATE));
