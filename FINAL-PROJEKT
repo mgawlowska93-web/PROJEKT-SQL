@@ -40,3 +40,11 @@ ADD FOREIGN KEY (order_id) REFERENCES products(prod_id);
 
 ALTER TABLE orders
 ADD FOREIGN KEY (order_id) REFERENCES customers(customer_id);
+
+
+INSERT INTO manufacturers (mfr_id, mfr_name, mfr_address, mfr_tax_id, contract_date)
+VALUES
+(1, 'Polski Styl', 'ul. Tylna 1, Warszawa', '7032089', '2025-01-15'),
+(2, 'UNICORN-Fashion', 'ul. Zielona 12, Kraków', '643210', '2017-03-20'),
+(3, 'ECO-STYLE', 'ul. Lambady 5, Wrocław', '443422', '2002-11-10'),
+(4, 'Faszyn-Raszyn', 'ul. wiejka 44, Poznań', '23334', '2014-02-01');
