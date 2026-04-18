@@ -1,1 +1,11 @@
 CREATE DATABASE Clothing_store;
+
+
+USE Clothing_store;
+
+CREATE TABLE manufacturers
+(mfr_id INTEGER PRIMARY KEY, 
+   mfr_name TEXT NOT NULL,
+   mfr_address TEXT NOT NULL,
+   mfr_tax_id INTEGER UNIQUE,
+   contract_date DATE);
