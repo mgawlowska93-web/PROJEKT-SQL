@@ -31,3 +31,12 @@ CREATE TABLE customers
    first_name VARCHAR (50) NOT NULL,
    last_name VARCHAR (50) NOT NULL,
    customer_address TEXT NOT NULL);
+
+ALTER TABLE products
+ADD FOREIGN KEY (prod_id) REFERENCES manufacturers(mfr_id);
+
+ALTER TABLE orders
+ADD FOREIGN KEY (order_id) REFERENCES products(prod_id);
+
+ALTER TABLE orders
+ADD FOREIGN KEY (order_id) REFERENCES customers(customer_id);
