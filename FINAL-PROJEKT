@@ -47,4 +47,61 @@ VALUES
 (1, 'Polski Styl', 'ul. Tylna 1, Warszawa', '7032089', '2025-01-15'),
 (2, 'UNICORN-Fashion', 'ul. Zielona 12, Kraków', '643210', '2017-03-20'),
 (3, 'ECO-STYLE', 'ul. Lambady 5, Wrocław', '443422', '2002-11-10'),
-(4, 'Faszyn-Raszyn', 'ul. wiejka 44, Poznań', '23334', '2014-02-01');
+(4, 'Kokoszka', 'ul. Piernika 114, Kielce', '4505931', '2015-08-10'),
+(5, 'Faszyn-Raszyn', 'ul. wiejska 44, Poznań', '2333426', '2014-02-01');
+
+
+INSERT INTO products  
+VALUES
+(1, 1, 'T-shirt Kot','bawelna, kot na piersi', 20.00, 24.60, 40.00, 49.20,23),
+(2, 1, 'T-shirt Pies','bawelna, jamnik na plecach', 20.00, 24.60, 40.00, 49.20,23),
+(3, 1, 'Bluza zielona','bawelna, z kapturem', 60.00, 73.80, 120.00, 147.60,23),
+(4, 1, 'Skarpetki starwars','2pak, yoda, bawelna i poliester', 10.00, 12.30, 20.00, 24.60,23),
+(5, 1, 'Czapka Adidos','czapka czarna z daszkiem', 25.00, 30.75, 50.00, 61.50,23),
+(6, 2, 'Sukienka grochy','Czerwona, wiskoza', 80.00, 98.40, 160.00, 196.80,23),
+(7, 2, 'Sukienka kwiaty','bawelna, sloneczniki', 45.00, 55.35, 90.00, 110.70,23),
+(8, 2, 'Koszula niebieska','meska koszula, bawelna', 70.00, 86.10, 140.00, 172.20,23),
+(9, 2, 'Szorty jeans','jeans, rozmiary S-XL', 35.00, 43.05, 70.00, 86.10,23),
+(10, 2, 'Szorty czarny','jeansowe czarne spodenki, fioletowe kieszenie', 15.00, 18.45, 30.00, 36.90,23),
+(11, 3, 'Szory biale','bawelna', 50.00, 61.50, 100.00, 123.00,23),
+(12, 3, 'Stanik bialy','koronka', 30.00, 36.90, 60.00, 73.80,23),
+(13, 3, 'Stanik czarny','koronka', 55.00, 67.65, 110.00, 135.30,23),
+(14, 3, 'Spodnie dres','6 paskow, czarne, bawelna', 90.00, 110.70, 180.00, 221.40,23),
+(15, 3, 'Bluza dres pomarancz','rozsuwana, bawelna', 12.00, 14.76, 25.00, 30.75,23),
+(16, 4, 'Majtki serduszka','3pak stringi, bawelna', 300.00, 369.00, 600.00, 738.00,23),
+(17, 4, 'Majtki biedronki','3pak figi, bawelna', 40.00, 49.20, 80.00, 98.40,23),
+(18, 4, 'Koszulka HP','Sowa na plecach, bawelna', 60.00, 73.80, 120.00, 147.60,23),
+(19, 4, 'Spodnie dres HP','miotla na boku, poliester', 50.00, 61.50, 100.00, 123.00,23),
+(20, 4, 'Bluza Myszka-Szyszka','Czerowna, miki na przodzie i plecach', 10.00, 12.30, 20.00, 24.60,23);
+
+INSERT INTO customers VALUES
+(1, 'Jan', 'Kowalski', 'ul. Wiejska 10, 00-001 Warszawa'),
+(2, 'Anna', 'Nowak', 'ul. Leśna 5, 31-150 Kraków'),
+(3, 'Piotr', 'Zieliński', 'al. Wolności 12, 50-001 Wrocław'),
+(4, 'Maria', 'Szymańska', 'ul. Portowa 3, 80-001 Gdańsk'),
+(5, 'Michał', 'Woźniak', 'ul. Szeroka 22, 60-001 Poznań'),
+(6, 'Katarzyna', 'Dąbrowska', 'ul. Miła 7, 90-001 Łódź'),
+(7, 'Jakub', 'Kozłowski', 'ul. Polna 44, 20-001 Lublin'),
+(8, 'Agnieszka', 'Jankowska', 'ul. Cicha 2, 40-001 Katowice'),
+(9, 'Tomasz', 'Mazur', 'ul. Główna 15, 70-001 Szczecin'),
+(10, 'Barbara', 'Kwiatkowska', 'ul. Krótka 9, 15-001 Białystok');
+
+
+INSERT INTO orders VALUES
+(201, 1, 1, '2024-03-15'),
+(202, 3, 2, '2024-03-15'),
+(203, 5, 3, '2024-03-15'),
+(204, 2, 4, '2024-03-20'),
+(205, 4, 6, '2024-03-20'),
+(206, 6, 6, '2024-03-21'),
+(207, 7, 7, '2024-03-22'),
+(208, 8, 9, '2024-03-23'),
+(209, 9, 9, '2024-03-24'),
+(210, 10, 10, '2024-03-25'),
+(211, 1, 20, '2024-03-26'),
+(212, 2, 20, '2024-03-27'),
+(213, 10, 13, '2024-03-28'),
+(214, 4, 20, '2024-03-29'),
+(215, 1, 15, '2024-03-30');
+
+
