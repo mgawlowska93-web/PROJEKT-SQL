@@ -33,7 +33,7 @@ CREATE TABLE orders
 
 -- 5. 
 CREATE TABLE customers
-(customer_id INTEGER PRIMARY KEY, 
+   (customer_id INTEGER PRIMARY KEY, 
    first_name VARCHAR (50) NOT NULL,
    last_name VARCHAR (50) NOT NULL,
    customer_address TEXT NOT NULL);
@@ -54,8 +54,7 @@ ADD CONSTRAINT fk_orders_customers
 FOREIGN KEY (customer_id) REFERENCES customers(customer_id);
 
 -- 7. 
-INSERT INTO manufacturers (mfr_id, mfr_name, mfr_address, mfr_tax_id, contract_date)
-VALUES
+INSERT INTO manufacturers (mfr_id, mfr_name, mfr_address, mfr_tax_id, contract_date) VALUES
 (1, 'Polski Styl', 'ul. Tylna 1, Warszawa', '7032089', '2025-01-15'),
 (2, 'UNICORN-Fashion', 'ul. Zielona 12, Kraków', '643210', '2017-03-20'),
 (3, 'ECO-STYLE', 'ul. Lambady 5, Wrocław', '443422', '2002-11-10'),
@@ -74,8 +73,7 @@ INSERT INTO customers VALUES
 (9, 'Tomasz', 'Mazur', 'ul. Główna 15, 70-001 Szczecin'),
 (10, 'Barbara', 'Kwiatkowska', 'ul. Krótka 9, 15-001 Białystok');
 
-INSERT INTO products  
-VALUES
+INSERT INTO products VALUES
 (1, 1, 'T-shirt Kot','bawelna, kot na piersi', 20.00, 24.60, 40.00, 49.20,23),
 (2, 1, 'T-shirt Pies','bawelna, jamnik na plecach', 20.00, 24.60, 40.00, 49.20,23),
 (3, 1, 'Bluza zielona','bawelna, z kapturem', 60.00, 73.80, 120.00, 147.60,23),
