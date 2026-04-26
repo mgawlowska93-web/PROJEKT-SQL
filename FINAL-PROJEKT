@@ -134,13 +134,10 @@ WHERE mfr_id = 1;
 
 -- 11. 
 SELECT prod_name, gross_price_sell,
-    CASE 
-        WHEN grp = 1 THEN 'cheap'
-        ELSE 'expensive'
-    END AS Category
+CASE WHEN grp = 1 THEN 'cheap' ELSE 'expensive' END AS Category
 FROM (SELECT prod_name, gross_price_sell, NTILE(2) OVER (ORDER BY gross_price_sell) AS grp
-    FROM products
-    WHERE mfr_id = 1) AS subquery;
+FROM products
+WHERE mfr_id = 1) AS subquery;
 
 -- 12. 
 SELECT DISTINCT prod_name 
