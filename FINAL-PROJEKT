@@ -126,3 +126,8 @@ FROM products a
 JOIN manufacturers b ON a.mfr_id = b.mfr_id
 WHERE b.mfr_id = 1
 ORDER BY prod_name;
+
+-- 10. 
+SELECT AVG(gross_price_sell) AS 'srednia'
+FROM products 
+WHERE mfr_id = 1;
