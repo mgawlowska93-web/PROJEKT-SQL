@@ -133,7 +133,6 @@ FROM products
 WHERE mfr_id = 1;
 
 -- 11. 
-
 SELECT prod_name, gross_price_sell,
     CASE 
         WHEN grp = 1 THEN 'cheap'
@@ -144,7 +143,6 @@ FROM (SELECT prod_name, gross_price_sell, NTILE(2) OVER (ORDER BY gross_price_se
     WHERE mfr_id = 1) AS subquery;
 
 -- 12. 
-
 SELECT DISTINCT prod_name 
 FROM products a 
 JOIN orders b ON a.prod_id=b.prod_id
@@ -154,3 +152,9 @@ SELECT DISTINCT prod_name
 FROM products a 
 JOIN orders b ON a.prod_id=b.prod_id 
 LIMIT 5;
+
+-- 14. 
+SELECT SUM(a.gross_price_sell)
+FROM products a 
+JOIN orders b ON a.prod_id=b.prod_id
+
