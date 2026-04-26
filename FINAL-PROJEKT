@@ -119,3 +119,10 @@ SELECT a.*, b.mfr_name
 FROM products a
 JOIN manufacturers b ON a.mfr_id = b.mfr_id
 WHERE b.mfr_id = 1;
+
+-- 9. 
+SELECT a.*, b.mfr_name 
+FROM products a
+JOIN manufacturers b ON a.mfr_id = b.mfr_id
+WHERE b.mfr_id = 1
+ORDER BY prod_name;
