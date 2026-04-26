@@ -149,4 +149,8 @@ SELECT DISTINCT prod_name
 FROM products a 
 JOIN orders b ON a.prod_id=b.prod_id
 
-
+-- 13.
+SELECT DISTINCT prod_name 
+FROM products a 
+JOIN orders b ON a.prod_id=b.prod_id 
+LIMIT 5;
