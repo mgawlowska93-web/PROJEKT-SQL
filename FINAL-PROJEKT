@@ -178,7 +178,6 @@ vat_percent IS NULL;
 
 
 -- 17.
-
 SELECT a.prod_name, a.gross_price_sell, COUNT(*) AS 'NR'
 FROM products a
 JOIN orders b ON a.prod_id = b.prod_id
