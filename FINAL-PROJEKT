@@ -175,3 +175,12 @@ gross_price_purch IS NULL OR
 net_price_sell IS NULL OR
 gross_price_sell IS NULL OR
 vat_percent IS NULL;
+
+
+-- 17.
+
+SELECT a.prod_name, a.gross_price_sell, COUNT(*) AS 'NR'
+FROM products a
+JOIN orders b ON a.prod_id = b.prod_id
+GROUP BY a.prod_id
+HAVING COUNT(*) = (SELECT MAX(NR1) FROM (SELECT COUNT(*) AS NR1 FROM orders GROUP BY prod_id) AS Subq);
