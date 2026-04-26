@@ -114,3 +114,8 @@ INSERT INTO orders VALUES
 (214, 4, 20, '2024-03-29'),
 (215, 1, 15, '2024-03-30');
 
+-- 8. 
+SELECT a.*, b.mfr_name 
+FROM products a
+JOIN manufacturers b ON a.mfr_id = b.mfr_id
+WHERE b.mfr_id = 1;
