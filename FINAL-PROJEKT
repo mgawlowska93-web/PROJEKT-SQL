@@ -163,3 +163,15 @@ SELECT a.*, prod_name
 FROM orders a 
 JOIN products b ON a.prod_id=b.prod_id
 ORDER BY order_date DESC;
+
+-- 16. 
+SELECT * FROM products 
+WHERE prod_id IS NULL OR 
+mfr_id IS NULL OR 
+prod_name IS NULL OR 
+prod_description IS NULL OR 
+net_price_purch IS NULL OR 
+gross_price_purch IS NULL OR 
+net_price_sell IS NULL OR
+gross_price_sell IS NULL OR
+vat_percent IS NULL;
