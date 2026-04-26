@@ -158,3 +158,8 @@ SELECT SUM(a.gross_price_sell)
 FROM products a 
 JOIN orders b ON a.prod_id=b.prod_id;
 
+-- 15. 
+SELECT a.*, prod_name
+FROM orders a 
+JOIN products b ON a.prod_id=b.prod_id
+ORDER BY order_date DESC;
